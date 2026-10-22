@@ -1,0 +1,82 @@
+generated: '2026-10-22'
+method: searched
+source:
+- https://www.ramsayhealth.com/en/privacy-policy/
+- https://www.ramsayhealth.com/en/site-tcs/
+scope_note: >-
+  Ramsay Health Care has no developer portal or API. The signals below come from its group Privacy Policy
+  (Australian facilities, Privacy Act 1988 (Cth) / Australian Privacy Principles). The Website Terms
+  (site-tcs, HTTP 200) were read and add no regulatory signal. The pages do not speak to subprocessor lists,
+  AI transparency, incident notification, Global Privacy Control, accessibility conformance or the other
+  catalog signals, so none are recorded.
+signals:
+  data_subject_request:
+    url: https://www.ramsayhealth.com/en/privacy-policy/
+    section: '2.7 Access to and correction of your personal information'
+    channel: Ramsay Privacy Officer (section 3.1 Corporate Privacy Officer)
+    rights_named: [access, correction]
+    escalation: Office of the Australian Information Commissioner (www.oaic.gov.au)
+    evidence:
+    - source: https://www.ramsayhealth.com/en/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        You have a right to have access to the personal information that we hold about you (for patients,
+        this includes health information contained in your health record). You can also request an amendment
+        to personal information that we hold about you should you believe that it contains inaccurate information.
+    - source: https://www.ramsayhealth.com/en/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: Ramsay may recover reasonable costs associated with supplying this information to you.
+    - source: https://www.ramsayhealth.com/en/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        If we do not agree to change your personal information in accordance with your request, we will permit
+        you to make a statement of the requested changes and we will enclose this with your personal information.
+    note: >-
+      Access and correction rights under the Australian Privacy Principles, exercised through the Privacy
+      Officer, with a possible cost recovery and complaint escalation to the OAIC (section 3.2). No deletion
+      or portability right and no response time are stated.
+  data_retention:
+    url: https://www.ramsayhealth.com/en/privacy-policy/
+    section: '2.9 Data security'
+    evidence:
+    - source: https://www.ramsayhealth.com/en/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Ramsay will destroy or permanently de-identify any of your information which is in its possession or
+        control and which is no longer needed for the purpose for which it was collected provided Ramsay is not
+        required under an Australian law or court/tribunal or otherwise to retain the information.
+    note: >-
+      A purpose-limited retention principle (destroy or de-identify when no longer needed, subject to legal
+      retention duties). No retention periods are published.
+  data_residency:
+    url: https://www.ramsayhealth.com/en/privacy-policy/
+    section: '2.10 Cross border disclosure'
+    evidence:
+    - source: https://www.ramsayhealth.com/en/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Ramsay may enter into arrangements with third parties to store data we collect or to access the data to
+        provide services (such as data processing), and such data may include personal information, outside of Australia.
+    note: >-
+      This is a disclosure that data MAY leave Australia, not a residency commitment. Ramsay says it takes
+      reasonable steps to bind overseas third parties to obligations substantially the same as the APPs.
+      No countries or regions are named.
+  subprocessors:
+    url: https://www.ramsayhealth.com/en/privacy-policy/
+    section: '2.6 How does Ramsay use your information?'
+    evidence:
+    - source: https://www.ramsayhealth.com/en/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Ramsay may provide, or allow access to, personal information to contractors engaged to provide
+        professional services to Ramsay’s business (e.g. Information Communication Technology providers) or to
+        contractors to whom aspects of our services are outsourced.
+    note: >-
+      Says contractors and outsourced providers (e.g. ICT providers) may access personal information and must
+      comply with privacy obligations. It does not publish a named subprocessor list or a change-notification process.

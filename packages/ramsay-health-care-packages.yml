@@ -1,0 +1,9 @@
+name: Ramsay Health Care packages
+generated: '2026-10-22'
+method: none
+note: No first-party SDKs or client libraries found. npm search "ramsay health" returned only unrelated packages; PyPI ramsay-health 404; GitHub repository search found no Ramsay-owned API repos; web search found no developer portal or API docs. apis.yml names no SDK, CLI or source-code links.
+checked:
+- https://registry.npmjs.org/-/v1/search?text=ramsay%20health&size=5
+- https://pypi.org/pypi/ramsay-health/json
+- https://api.github.com/search/repositories?q=ramsay+health+care+api
+packages: []

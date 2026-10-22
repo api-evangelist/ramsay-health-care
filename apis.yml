@@ -1,23 +1,91 @@
 aid: ramsay-health-care
+
 name: Ramsay Health Care
-description: 'Ramsay Health Care is a company surfaced via the API Evangelist harvest backlog (source:
-  australia-apidays-2026) and added to the network as a stub for full-pipeline profiling.'
+
+description: Ramsay Health Care (ASX:RHC) is a private healthcare company that provides healthcare to millions of people each
+  year through a network of hospitals, clinics and services in Australia, Europe and the United Kingdom, operating through
+  businesses including Ramsay Australia, Ramsay UK, Elysium Healthcare and Ramsay Santé. Listed on the Australian Stock Exchange
+  since 1997, its corporate site publishes investor, sustainability and careers information; no public developer portal or
+  API documentation was found.
+
 url: https://raw.githubusercontent.com/api-evangelist/ramsay-health-care/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Healthcare
+- Hospitals
+- Private Healthcare
+- Australia
+- ASX Listed
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://www.ramsayhealth.com/globalassets/global/page-banners/rhc-pms289-logo-stacked-0518.jpg
+
 common:
+- type: Hosts
+  url: hosts/ramsay-health-care-hosts.yml
+- type: Vendors
+  url: vendors/ramsay-health-care-vendors.yml
+- type: DomainSecurity
+  url: security/ramsay-health-care-domain-security.yml
 - type: Website
-  url: https://ramsayhealth.com/
+  url: https://www.ramsayhealth.com/
+- type: About
+  url: https://www.ramsayhealth.com/en/about/
+- type: Support
+  url: https://www.ramsayhealth.com/en/contact/
+- type: Investors
+  url: https://www.ramsayhealth.com/en/investors/
+- type: Careers
+  url: https://www.ramsayhealth.com/en/people-and-careers/
+- type: TermsOfService
+  url: https://www.ramsayhealth.com/en/site-tcs/
+- type: PrivacyPolicy
+  url: https://www.ramsayhealth.com/en/privacy-policy/
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website verified (title "Ramsay Health Care | People Caring for People"); no developer portal, API docs, GitHub
+    org or status page found on the site or by search.
+  evidence:
+  - url: https://www.ramsayhealth.com/
+    status: 200
+  - url: https://www.ramsayhealth.com/en/about/
+    status: 200
+  - url: https://www.ramsayhealth.com/en/contact/
+    status: 200
+  - url: https://www.ramsayhealth.com/en/investors/
+    status: 200
+  - url: https://www.ramsayhealth.com/en/people-and-careers/
+    status: 200
+  - url: https://www.ramsayhealth.com/en/site-tcs/
+    status: 200
+  - url: https://www.ramsayhealth.com/en/privacy-policy/
+    status: 200
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

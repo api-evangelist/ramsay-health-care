@@ -1,0 +1,28 @@
+name: Ramsay Health Care MCP Server
+type: MCPServer
+generated: '2026-10-22'
+method: none
+source:
+- https://www.ramsayhealth.com/.well-known/mcp.json
+- https://www.ramsayhealth.com/.well-known/mcp/server-card.json
+description: >-
+  Checked for an official Ramsay Health Care MCP server and found none. On 2026-10-22,
+  https://www.ramsayhealth.com/.well-known/mcp.json and /.well-known/mcp/server-card.json both returned HTTP 404.
+  Pre-flight contract discovery on ramsayhealth.com, www.ramsayhealth.com and api.ramsayhealth.com found no MCP,
+  OpenAPI, AsyncAPI or GraphQL surface. A web search for a Ramsay Health Care MCP server, developer API or llms.txt
+  returned nothing from Ramsay Health Care. With no published OpenAPI to derive a candidate tool list from,
+  this file lists no tools.
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+tools: []
+probes:
+- url: https://www.ramsayhealth.com/.well-known/mcp.json
+  status: 404
+- url: https://www.ramsayhealth.com/.well-known/mcp/server-card.json
+  status: 404
+- url: https://www.ramsayhealth.com/AGENTS.md
+  status: 404
+- url: https://www.ramsayhealth.com/llms.txt
+  status: 404
